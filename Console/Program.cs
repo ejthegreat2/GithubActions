@@ -63,7 +63,7 @@ public class Program
 		return Console.ReadLine()?.Trim() ?? throw new InvalidOperationException();
 	}
 
-	public static double Add(string x, string y)
+	public static double Add(string? x, string? y)
 	{
 		if (x is null || y is null)
     		{
