@@ -65,15 +65,15 @@ public class Program
 
 	public static double Add(string x, string y)
 	{
-		if (num1 is null || num2 is null)
+		if (x is null || y is null)
     		{
        			throw new ArgumentNullException();
     		}
-
-    		if (!int.TryParse(num1, out int value1) || !int.TryParse(num2, out int value2))
+		if (!double.TryParse(x, out double value1) || !double.TryParse(y, out double value2))
     		{
        			throw new FormatException();
     		}
+		
 		return double.Parse(x) + double.Parse(y);
 	}
 
