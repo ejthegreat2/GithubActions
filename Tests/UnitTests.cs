@@ -1,4 +1,4 @@
-namespace GithubActions;
+namespace GithubActionsLab;
 
 [TestClass]
 public class Addition
